@@ -9,14 +9,6 @@ import java.util.Date;
 @Entity
 public class Post {
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
@@ -28,6 +20,13 @@ public class Post {
 
     Date date;
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
     public Date getDate() {
         return date;
     }
